@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "***Why do I decide to be a data scientist?*****"
+title:      "Why do I decide to be a data scientist?"
 date:       2020-06-21 21:49:54 -0400
 permalink:  why_do_i_decide_to_be_a_data_scientist
 ---
