@@ -1,11 +1,11 @@
 # Site settings
 author: Chun-Min Jen
-title: From Experimental Nuclear Physicist to Data Scientist
+title: From Experimental Nuclear Physicist to Data Scientist/AI Engineer
 header-img: img/home-bg.png
 email: jencmhep@gmail.com
 copyright_name: Chun-Min Jen
 description: > # this means to ignore newlines until "baseurl:"
-  My Life Journey
+  My Amazing Life Journey
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  renjmindy
