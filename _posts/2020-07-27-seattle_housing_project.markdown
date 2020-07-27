@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Seattle Housing Project "
-date:       2020-07-27 20:43:00 +0000
+date:       2020-07-27 16:43:01 -0400
 permalink:  seattle_housing_project
 ---
 
@@ -68,5 +68,7 @@ To begin with, we ask one question prior to data exploration: What're major fact
 
 *  discount deal/offer for specific groups and seasons
 
-![Fig1](https://github.com/renjmindy/dsc-mod-2-project-v2-1-onl01-dtsc-ft-052620/blob/master/image/mod2_motivation_final_submit_alt.pngttp://) demonstrates 
+![Fig1](https://github.com/renjmindy/dsc-mod-2-project-v2-1-onl01-dtsc-ft-052620/blob/master/image/mod2_motivation_final_submit_alt.pngttp://) demonstrates relations between these selected factors and house selling price. In addition to that, we could also see how likely these factors are correlated to each other. All selective factors that could help us study home buyers' purchase behaviors are expected to be as more independent to each other as possible. Otherwise, if there exists a certain level of correlation among a handful of factors that were fed into the model, varying one of them will lead to changes on other dependent ones, and the modeling fit result won't be reliable any longer, accordingly. 
+
+
 
