@@ -35,39 +35,39 @@ To begin with, we ask one question prior to data exploration: What're major fact
 
 3. house size
 
-  *  interior 
+   *  interior 
 
-  *  ratio of interior to overall (exterior included)
+   *  ratio of interior to overall (exterior included)
 
-  *  family size
+   *  family size
 
 4. house design
 
-  *  floor plan
+   *  floor plan
 
-  *  with or without basement?
+   *  with or without basement?
 
 5. house amenities
 
-  *  pool nearby?
+   *  pool nearby?
 
 6. house price
 
-  *  home buyer's economic capability
+   *  home buyer's economic capability
 
-  *  home buyer's health condition
+   *  home buyer's health condition
 
-  *  home buyer's age range or generation
+   *  home buyer's age range or generation
 
-  *  home buyer's intension to be a landlord of the house (monthly rental fee)
+   *  home buyer's intension to be a landlord of the house (monthly rental fee)
 
-  *  annual tax payment
+   *  annual tax payment
 
-  *  renovation/maintenance expanses included?
+   *  renovation/maintenance expanses included?
 
-  *  loan option for specific groups
+   *  loan option for specific groups
 
-  *  discount deal/offer for specific groups and seasons
+   *  discount deal/offer for specific groups and seasons
 
 [Fig1](https://github.com/renjmindy/dsc-mod-2-project-v2-1-onl01-dtsc-ft-052620/blob/master/image/mod2_motivation_final_submit_alt.png) demonstrates relations between these selected factors and house selling price. In addition to that, we could also see how likely these factors are correlated to each other. All selective factors that could help us study home buyers' purchase behaviors are expected to be as more independent to each other as possible. Otherwise, if there exists a certain level of correlation among a handful of factors that were fed into the model, varying one of them will lead to changes on other dependent ones, and the modeling fit result won't be reliable any longer, accordingly. 
 
@@ -110,13 +110,13 @@ Prior to EDA, outliers were removed by getting rid of data points sitting outsid
 
 In first EDA question study, we noticed that different seasons make impact on house selling price and the willingness of joining house tours as well. We also noticed the house condition, location and age (built-year/grading) also affect house buyers to participate in house tours. Three recommendations are listed as follows:
 
-  * house condition score
+  * house condition score as shown in [Fig7](http://https://github.com/renjmindy/dsc-mod-2-project-v2-1-onl01-dtsc-ft-052620/blob/master/image/mod2_EDAQ1-p2.png)
 
-  * house location
+  * house location as shown in [Fig8](http://https://github.com/renjmindy/dsc-mod-2-project-v2-1-onl01-dtsc-ft-052620/blob/master/image/mod2_EDAQ1-p3.png) 
 
-  * house age (built-year related grade scale)
+  * house age (associated house built-year with grade scale) as shown in [Fig9](http://https://github.com/renjmindy/dsc-mod-2-project-v2-1-onl01-dtsc-ft-052620/blob/master/image/mod2_EDAQ1-p9.png)
 
-  * house amenities (pool)
+  * house grade (related to house age) as shown in [Fig10](http://https://github.com/renjmindy/dsc-mod-2-project-v2-1-onl01-dtsc-ft-052620/blob/master/image/mod2_EDAQ1-p1.png)
 
 To quantify our observations, a list of future work are needed.
 
@@ -128,8 +128,8 @@ To quantify our observations, a list of future work are needed.
 
 Moreover, in second EDA question study, the analysis procedure is the same as the one applied to answering first EDA question. Unlike factors used to interpret home buyers' decision-making behaviors, two additional factors play primary role. They are:
 
-  * House design (floor plan)
+  * House design (floor plan, e.g. with or without basement) as shown in [Fig11](http://https://github.com/renjmindy/dsc-mod-2-project-v2-1-onl01-dtsc-ft-052620/blob/master/image/mod2_EDAQ1-p6.png)
 
-  * House maintenance (additional renovation)
+  * House maintenance (additional renovation) as shown in [Fig12](http://https://github.com/renjmindy/dsc-mod-2-project-v2-1-onl01-dtsc-ft-052620/blob/master/image/mod2_EDAQ1-p5.png)
 
 
