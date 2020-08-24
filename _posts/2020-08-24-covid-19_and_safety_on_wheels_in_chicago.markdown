@@ -1,0 +1,28 @@
+---
+layout: post
+title:      "COVID-19 and Safety On Wheels in Chicago:"
+date:       2020-08-24 04:54:53 +0000
+permalink:  covid-19_and_safety_on_wheels_in_chicago
+---
+
+## Let crashes show you how to learn lessons
+
+I am curious about crashe causes in Chicago over COVID-19. Before opening the box to answer this question for myself, I applied a great variety of data-cleaning techniques to tackle a bunch of features which contain missing values. When I walked through all features one-by-one, I was developing different traffic accident scenarios in my mind.
+
+I live in DuPage county of IL which is merely 36 miles away from downtown Chicago and 30 miles away from O'Hare airport. The later are both located in Cook county just right next to DuPage. I love driving on the prairie of IL, and the speed limit is as high as 50 MPH. Most of time, I drive at the speed of 60 MPH, even 65 MPH, when I drive alone. 
+
+My loved one accompanied with me to purchase my first vehicle completely owned by myself. He is a Toyota lover, but I am a Subaru fan. My vehicle's model is Legacy which is 4-cylinder 2.5. My loved one always reminds me of not driving too fast, for the horse power of this model is a bit higher than other sedan types of vehicles. Despite that, my loved one got his rear-end accident on the way back to IL from his howtown, Boulder CO, where he was born and grew up, by last early August. Yes, it happened one year ago. He drove too fast and he couldn't make a full stop. Hence, he hit the front car on the high-way. He is fine now. But, he bought another brand-new car (Toyota, still), for his car's engine was completely malfunctioned. 
+
+Owing to this unexpected event, I decided to work on Chicago crash data for my module 3 project.
+
+However, after reading Chicago crash data in details, I just realized the traffic in Chicago city is entirely different from that in sub-urban counties that complete the rest of IL. Anyway, I still sticked to this data which come from three separate table sheets, including crashes, people and vecle in crash, respectively. I combined all three of them, and I found duplicate features which share similar information but come from different tables. I either removed them to only keep one or convert all of them into a new feature. In the formal case, the redundant ones were regarded as baseline references used to cross-check with the selective one which stays and eventually is used for modeling  before they were completely discarded.
+
+I also spent a great amount of time on filling out missing values in zipcode which is regarded as one numerical variable. I have a strong feeling that the occurance of traffic acciedents might correlate with vehicle drivers' home location, because most of time, the traffice accidents took place either on the way to work or on the way home. And, I did observe high crash probability at the hour of 7-8 am and the hours of 3-5 pm which are consistent with my preconceived impression. 
+
+As for the age of people who got involved in crash, I couldn't see an apparent pattern until all models manifest its importance and influence on the crash cause. The last but not least, I combined two features: crash type and people type into a new categorical one which turns out to be the most significant feature that plays the dominant role to get the accuracy of model prediction as high as 95%. Since this is a multi-class problem, this new categorical feature contains a range of classes used to depict the crash scene. What's the crash scene? Why is it related to the fatal degree? I also found this crash scene feature (aka: fatal condition) is correlated to the damage cost after we looked at the number of units involved in crash scence. The more units are involved in crash; the higher damage cost  could be. Certainly, more units are related to the crash scene. Here, units include vehicle, bicycle, pedestrain, other automobile transportation and all other possible roadway users. 
+
+On the other hand, most of existing categorical features in raw data contains more than 80% of NaN missing values. All of high missing-value features were dumped from the most begining in order to save more computational cost. In this data analysis, one question we need to ask ourselves in the pre-processing stage is how many of them are informative? What does the informative mean here? We already learned that almost 90% of features in raw data is categorical type. Despite that, some of these features might be still useless and meaningless, not to mention an useful indication to a traditional classification problem. What does it mean? 
+
+To make it clear, I can show you one example here. Take the feature named as BAC result, 77% of this feature shows 'TestNotOffered' and 22% of it is missing. That means 99% of this feature data is meaningless. Similar situation is also observed in other features. Hence, the first thing I would like to do is to select a bag of features, and each of them can provide as much meaningful information as possible. 
+
+The final prediction accuracy reaches to 95%. I, however, found three more unused features which are also considered to be extremely informative. In the future work, I will combine three of them and convert them into one single feature, just like what I did to create a so-called crash scene categorical feature as mentioned aboe. This new feature would be named as crash side categorical feature. I am confident that the prediction accuracy could be dramatically enhanced by 5% more after accounting for this crash side feature - a combination of three more informative features. 
