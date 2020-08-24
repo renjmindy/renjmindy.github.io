@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "COVID-19 and Safety On Wheels in Chicago:"
-date:       2020-08-24 04:54:53 +0000
+date:       2020-08-24 00:54:54 -0400
 permalink:  covid-19_and_safety_on_wheels_in_chicago
 ---
 
