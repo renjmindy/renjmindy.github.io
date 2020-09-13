@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Diagnosis of COVID-19 alike Viral Pneumonia:"
-date:       2020-09-13 16:58:53 +0000
+date:       2020-09-13 12:58:53 -0400
 permalink:  diagnosis_of_covid-19_alike_viral_pneumonia
 ---
 
@@ -17,4 +17,5 @@ In spite of the accuracy increment by comparing the CNN model against baseline, 
 
 Here, I would like to present three recommensation item. First of all, a careless examination of lung-related diseases, whether they are malignant or non-malignant, by eye-reading chest X-ray images might be misled as the pneumonia. Hence, clinicians encourage patients to get more follow-up radiographs for the further confirmation. Secondly, as mentioned previously, chest X-ray imgaes hardly tell viral pneumonia from bacterial one. A termary classifier is anticipated to be finer than a binay one. This termary classifier comprises three components: normal, bacteria and virus, and it needs chest X-ray images being categorized into three sub-groups as described in [Mendeley](https://data.mendeley.com/datasets/rscbjbr9sj/3). The last recomendation is correlated to the current Coronavirus epidemic spread all over the world. The illness tied to the new coronavirus was originally called novel coronavirus-infected pneumonia (NCIP). The World Health Organization renamed it COVID-19, which is short for coronavirus disease 2019. A severe Coronavirus complication is the pneumonia through the viral infections in both lungs, leading to inflammation in tiny air sacs inside your lungs. COVID-19 damages the cells and tissue that line the air sacs in your lungs. These sacs are where the oxygen you breathe is processed and delivered to your blood. The damage causes tissue to break off and clog your lungs. The walls of the sacs can thicken, making it very hard for you to breathe.  A chest X-ray image scan may show patchy areas of damage in both your lungs. Hence, we might take the development of one COVID-19 pneumonia classifier into consideration.
 
+Regarding the future work, I propose four plans. The first is to develop a classifier used to separate viral from bacterial pneumonia. The second one is to develop a translator used to intepret picrures and generate captions as printed on every single X-ray image. This application can save the time consumption of diagnosis for medical doctors. The third one is develop a label generator used to produce more images which shows the sign of pneumonia. The forth one is develop an frame maker used to align every X-ray image for the convenience of handwritten labelling.   ​
 
