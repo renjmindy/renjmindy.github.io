@@ -1,12 +1,13 @@
 ---
 layout: post
-title:      "Introduction to Convolutional Neural Network (CNN)"
-date:       2020-09-27 02:23:10 +0000
+title:      "Why is CNN (if MLP available)?"
+date:       2020-09-26 22:23:11 -0400
 permalink:  introduction_to_convolutional_neural_network_cnn
 ---
 
 
-## Why is CNN (if MLP available)?
+## Introduction to Convolutional Neural Network (CNN)
+
 
 This blog is about how to solve computer vision tasks with narrow networks. We already know about Multi Layer Perceptron (MLP) that has lots of hidden layers. Besides MLP, we will introduce a new layer of neurons specifically designed for image input. What is an image input? Take a gray-scale image. It is actually a matrix of pixels or picture elements. Dimensions of these metrics are called image resolution. For example, it can be denoted as 300 by 300. Each pixel stores its brightness or intensity, ranging from zero to 255. Zero intensity corresponds to black color. Black colors correspond to roughly zeros, and light colors are close to 255. Color images store pixel intensities for three different channels: red, green, and blue. 
 
