@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Introduction to Convolutional Neural Network (CNN)"
-date:       2020-09-28 02:17:16 +0000
+date:       2020-09-27 22:17:17 -0400
 permalink:  introduction_to_convolutional_neural_network_cnn
 ---
 
@@ -24,5 +24,12 @@ Before we dive into the details, let's look at how we deal with color images. Wh
 average of its inputs. Let's look at the example. We have a 200 by 200 by 64 input volume, let's take a single depth
 slice from that volume. Let's apply 2 by 2 max pooling with stride 2. How does one max pooling work? We take a maximum value from there, and that is our output. In this case, it is 6. Then we slide the pooling layer to the next patch, and we take the maximum value from the current patch to get 8. That's exactly how the max pooling works. If you look at the feature map, it actually means that we downsample our image. As a consequence, we're losing some details, but it actually stays kind of the same. And notice one more thing, when we apply the pooling layer, we do it depth-wise. It means that we don't change the number of output channels. We simply change the dimensions. So the volume of 200 by 200 by 64 becomes the volume of 100 by 100 by 64. 
 
+
+*But how does the back propagation work for the max pooling layer?* Strictly speaking, getting one maximum value is not a differentiable function. Despite that, we will apply some heuristics here in order to make it work. Let's look at the 
+patch to which the max pooling layer is applied for taking maximum. Let's take one neuron, which is not the maximum 
+activation. If we change one value of the patch a little bit, this variation will not change the maximum over this patch. 
+That is, the maximum of this patch will stay the same, which is in this case 8. That means that there is no gradient with
+respect to non-maximum patch neurons, since varying them slightly doesn't affect the output. However, what happens if we change the neuron that reacts the max pooling layer to provide the maximum value? If we change this specific neuron's value, then the maximum will change linearly as well. That means that for the maximum patch neuron, we have a gradient of 1. Let's put it all together into a simple convolutional neural network that was developed in 1998 by Yann LeCun for handwritten digits recognition on MNIST dataset. This data set contains 10 clusters of hand written digits, ranging from 0 to 9. So how does it work? We take our input, which is a grayscale image of the size of 32 by 32. We apply our first convolutional layer, having 5 by 5 convolutions, and we learn six different kernels here. Then, we apply a pooling layer, so that we lose some details, and we have some translation invariance. The pooling layer effectively halves the resolution of the image, and it becomes 14 by 14 by 6, where the number of output channels doesn't change. Then let's add one more convolutional layer, which is the same size of the kernel, denoted as 5 by 5 by 6. And let's learn 16 of these kernels. What do we do next? Then we apply one more pooling layer, right? So we have a 5 by 5 by 16 volume. We can go on and on, and then we will have to stop. Finally, we will have to use some classifier that will use those features in order to produce probability outputs for the digits. For the digit classification purpose, we will use a bunch of fully connected layers, a fully connected layer of 120 neurons, 84, and 10 neurons with applied softmax function on outputs. So what can we see from this diagram? It is known that neurons of deep convolutional 
+layers learn complex representations that can be used as features for classification with MLP. The first convolutional slash pulling part is actually an automatic feature extractor, it is stressed features that are useful for the classification with MLP. 
 
 
