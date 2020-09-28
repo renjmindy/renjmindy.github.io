@@ -1,12 +1,14 @@
 ---
 layout: post
-title:      "Introduction to Convolutional Neural Network (CNN)"
+title:      "How is CNN architecture built up from scratch?"
 date:       2020-09-27 22:17:17 -0400
 permalink:  introduction_to_convolutional_neural_network_cnn
 ---
 
 
-## How is CNN architecture built up from scratch? 
+
+## Introduction to Convolutional Neural Network (CNN)
+ 
 
 In this blog post, I will discuss one more useful layer of neurons. And at the end, we will build our first fully working neural network for images. 
 
