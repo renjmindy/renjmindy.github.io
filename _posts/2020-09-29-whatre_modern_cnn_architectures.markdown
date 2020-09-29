@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What're modern CNN architectures?"
-date:       2020-09-29 19:21:37 +0000
+date:       2020-09-29 15:21:38 -0400
 permalink:  whatre_modern_cnn_architectures
 ---
 
