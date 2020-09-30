@@ -2,7 +2,7 @@
 layout: post
 title:      "Where do we implement tricks to help train very deep neural network? "
 date:       2020-08-24 00:54:54 -0400
-permalink:  covid-19_and_safety_on_wheels_in_chicago
+permalink:  deep_neural_network_training_tricks
 ---
 
 
